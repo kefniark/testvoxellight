@@ -173,10 +173,10 @@ wallMaterial.bumpTexture.level = 0.5;
 wallMaterial.specularColor = new BABYLON.Color3(0.05, 0.05, 0.05);
 wallMaterial.specularPower = 8;
 wallMaterial.zOffset = 3;
-wallMaterial.reflectionTexture = eqTexture;
-wallMaterial.refractionTexture = eqTexture;
-wallMaterial.reflectivityColor = BABYLON.Color3.Gray();
-wallMaterial.indexOfRefraction = 0.2;
+// wallMaterial.reflectionTexture = eqTexture;
+// wallMaterial.refractionTexture = eqTexture;
+// wallMaterial.reflectivityColor = BABYLON.Color3.Gray();
+// wallMaterial.indexOfRefraction = 0.2;
 
 
 var generatedMeshes = [];
