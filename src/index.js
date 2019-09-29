@@ -128,6 +128,14 @@ var scene = new BABYLON.Scene(engine);
 
 // This creates and positions a free camera (non-mesh)
 var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
+camera.minZ = 0.1;
+camera.maxZ = 100;
+
+scene.fogMode = BABYLON.Scene.FOGMODE_LINEAR ;
+scene.fogStart = 20.0;
+scene.fogEnd = 60.0;
+scene.fogColor = new BABYLON.Color3(0.05, 0.05, 0.05);
+scene.fogDensity = 0.05;
 
 // This targets the camera to scene origin
 camera.setTarget(BABYLON.Vector3.Zero());
